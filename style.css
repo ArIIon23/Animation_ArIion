@@ -35,6 +35,7 @@ body{
 
 @media(max-width:425px){
     .main-text{
+        margin-top:50px;
         margin: auto;
         font-size: 70px;
       
