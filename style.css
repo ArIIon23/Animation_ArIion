@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+body{
+    font-family: 'Sigmar One', cursive;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.main-text{
+    margin-top: 250px;
+    background: url(1.jpg);
+    font-size: 150px;
+    color: transparent;
+    /* картинка в нутри текста  */
+    -webkit-background-clip: text;
+    /* 1. название анимации.   */
+    /* 2.сколько будет длиться.   */
+    /* 3.infinite 	Анимация проигрывается бесконечно.*/
+    /* 4.linear Линейная функция, анимация происходит равномерно на протяжении всего времени, без колебаний в скорости.*/
+    animation: ArIion 10s infinite linear;
+    
+}
+
+
+@keyframes ArIion  {
+    from{
+        background-position: 0 0;
+    }
+    
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+@media(max-width:425px){
+    .main-text{
+        margin: auto;
+        font-size: 70px;
+      
+    
+        
+    }
+}
